@@ -19,7 +19,7 @@ import android.app.Activity
 import android.content.Context
 import android.util._
 import android.widget.TextView
-import scala.util.control.Breaks._
+
 
 
 class LogView(context: Context
@@ -31,24 +31,24 @@ class LogView(context: Context
     priority match {
       case android.util.Log.VERBOSE =>
         priorityStr = "VERBOSE"
-        break //todo: break is not supported
+
       case android.util.Log.DEBUG =>
         priorityStr = "DEBUG"
-        break //todo: break is not supported
+
       case android.util.Log.INFO =>
         priorityStr = "INFO"
-        break //todo: break is not supported
+
       case android.util.Log.WARN =>
         priorityStr = "WARN"
-        break //todo: break is not supported
+
       case android.util.Log.ERROR =>
         priorityStr = "ERROR"
-        break //todo: break is not supported
+
       case android.util.Log.ASSERT =>
         priorityStr = "ASSERT"
-        break //todo: break is not supported
+
       case _ =>
-        break //todo: break is not supported
+
     }
     var exceptionStr: String = null
     if (tr != null) {
